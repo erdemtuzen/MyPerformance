@@ -1,0 +1,13 @@
+c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\bin\Debug\resources.pri
+c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\bin\Debug\AppxManifest.xml
+c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\bin\Debug\MyPerformance.build.appxrecipe
+c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\bld\Debug\priconfig.xml.intermediate
+c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\bld\Debug\layout.resfiles.intermediate
+c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\bld\Debug\resources.resfiles.intermediate
+c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\bld\Debug\pri.resfiles.intermediate
+c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\bld\Debug\priconfig.xml
+c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\bld\Debug\layout.resfiles
+c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\bld\Debug\resources.resfiles
+c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\bld\Debug\pri.resfiles
+c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\bld\Debug\LanguageQualifiers.txt
+c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\bld\Debug\ProjectArchitectures.txt

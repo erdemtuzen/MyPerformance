@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<language>
+  <pagetitle>Performansım</pagetitle>
+  <pagetitlecustomer>Müşteri İktisadı</pagetitlecustomer>
+  <pagetitledeposit>Mevduat</pagetitledeposit>
+  <pagetitleretail>Bireysel Krediler</pagetitleretail>
+  <hello>Merhaba!</hello>
+  <customer-acq-title>
+    Müşteri İktisadı
+  </customer-acq-title>
+  <retail-loans-title>
+    Bireysel Krediler
+  </retail-loans-title>
+  <retail-loans>
+    Bireysel Krediler
+  </retail-loans>
+  <deposit-title>
+    Mevduat
+  </deposit-title>
+  <deposit>
+    Mevduat
+  </deposit>
+  <Quota>
+    Kota
+  </Quota>
+  <AveragePerformance>
+    Ortalama Performans
+  </AveragePerformance>
+  <linelabel1>
+    Satın Alma A
+  </linelabel1>
+  <linelabel2>
+    Satın Alma B
+  </linelabel2>
+  <linelabel3>
+    Satın Alma C
+  </linelabel3>
+  <linelabel4>
+    Satın Alma D
+  </linelabel4>
+  <consumeracqusition>
+    Muşteri İktisadı
+  </consumeracqusition>
+  <last4month>
+    Son 4 Ay
+  </last4month>
+  <May>
+    Mayıs
+  </May>
+  <Mar>
+    Mart
+  </Mar>
+  <Apr>
+    Nisan
+  </Apr>
+  <Feb>
+    Şubat
+  </Feb>
+  <Overview>
+    Genel Bakış
+  </Overview>
+</language>

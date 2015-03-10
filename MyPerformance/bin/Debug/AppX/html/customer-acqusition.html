@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>MyPerformance</title>
+     <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0.RC/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0.RC/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0.RC/js/ui.js"></script>
+    <!-- MyPerformance references -->
+    <link href="/css/default.css" rel="stylesheet">
+    <script src="/js/default.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/kxp.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            // Customer Acq
+            $(".customer-acq-page-title").hover(normalState, hoverState);
+            function normalState() {
+                $("#customer-acq-title").css("color", "white");
+                $("#customer-acq-value").css("color", "white");
+            };
+            function hoverState() {
+                $("#customer-acq-title").css("color", "white");
+                $("#customer-acq-value").css("color", "white");
+            };
+
+            //
+          
+
+        });
+    </script>
+    <style type="text/css">
+        #customer-acq-title{
+            margin-left: 130px;
+            color: white;
+             margin-top: 15px;
+        } 
+        #customer-acq-value {
+            margin-left: 130px;
+            color: white;
+        } 
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            var chart;
+            $(document).ready(function () {
+                chart = new Highcharts.Chart({
+                    chart: {
+                        renderTo: 'container',
+                        zoomType: 'xy'
+                    },
+                    title: {
+                        text: ' '
+                    },
+                    subtitle: {
+                        text: ' '
+                    },
+                    xAxis: [{
+                        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+                    }],
+                    yAxis: [{ // Primary yAxis
+                        labels: {
+                            formatter: function () {
+                                return this.value + 'x1000';
+                            },
+                            style: {
+                                color: '#89A54E'
+                            }
+                        },
+                        title: {
+                            text: 'Customer Acqusition',
+                            style: {
+                                color: '#89A54E'
+                            }
+                        }
+                    }, { // Secondary yAxis
+                        title: {
+                            text: ' ',
+                            style: {
+                                color: '#4572A7'
+                            }
+                        },
+                        labels: {
+                            formatter: function () {
+                                return this.value + ' x1000';
+                            },
+                            style: {
+                                color: '#4572A7'
+                            }
+                        },
+                        opposite: true
+                    }],
+                    tooltip: {
+                        formatter: function () {
+                            return '' +
+                        this.x + ': ' + this.y +
+                        (this.series.name == 'Acq' ? ' $' : '$');
+                        }
+                    },
+                    legend: {
+                        layout: 'vertical',
+                        align: 'left',
+                        x: 120,
+                        verticalAlign: 'top',
+                        y: 100,
+                        floating: true,
+                        backgroundColor: '#FFFFFF'
+                    },
+                    series: [{
+                        name: 'Consumer',
+                        color: '#4572A7',
+                        type: 'column',
+                        yAxis: 1,
+                        data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+
+                    }, {
+                        name: 'income',
+                        color: '#89A54E',
+                        type: 'spline',
+                        data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+                    }]
+                });
+            });
+
+        });
+		</script>
+    
+    <script src="/js/highcharts.js"></script>
+</head>
+<body>
+    <div data-win-control="WinJS.UI.ViewBox">
+        <div class="fixedlayout">
+            <div class="all-content">
+                <button class="win-backbutton" onclick="javascript:history.go(-1)" style="margin-top: 6px; float: left; margin-left: 10px; margin-right:5px;" ></button><h1 class="page-title" id="pagetitle"></h1>
+                 <br class="clr" />
+                 <input type="button" class="Lang" id="turkish" value="Türkçe" onclick="selectLang('tr');">
+                    <input type="button" id="english" value="English" onclick="selectLang('en');">
+                 <h1 class="hello-message" id="hello"></h1>
+                <br class="clr" />
+                <div class="customer-acq-page-title">
+                      <a href="/html/customer-acqusition.html">
+                                <span id="customer-acq-title" class="cat-title"></span>
+                                <span id="customer-acq-value"class="cat-value">$1,031</span>
+                            </a>
+                </div>
+                <div class="main-content">
+                    <div class="detailed-content">
+                        <div class="detailed-content-left">
+                            <div id="container" style="max-width: 500px; height: 300px; margin-top: 30px; margin-left: 30px;"></div>
+                        </div>
+                        <div class="detailed-content-left">
+                            <h1 class="sp-title-w-icon" id="consumeracqusition"></h1>
+                            <h1 class="sp-title" id="last4month"></h1>
+                            <div class="table-caption">
+                                <span class="column-label" id="May"></span><span class="column-label" id="Apr"></span>
+                                <span class="column-label" id="Mar"></span><span class="column-label" id="Feb"></span>
+                            </div>
+                                     <div class="table-line">
+                                        <span class="line-label" id="linelabel1"></span>
+                                        <span class="line-label">700 $</span>
+                                        <span class="line-label">690 $</span>
+                                        <span class="line-label">950 $</span>
+                                        <span class="line-label">1450 $</span>
+                                    </div>
+                                    <div class="table-line">
+                                        <span class="line-label" id="linelabel2"></span>
+                                        <span class="line-label">1820 $</span>
+                                        <span class="line-label">2150 $</span>
+                                        <span class="line-label">2520 $</span>
+                                        <span class="line-label">2650 $</span>
+                                    </div>
+                                    <div class="table-line">
+                                        <span class="line-label" id="linelabel3"></span>
+                                        <span class="line-label">2230 $</span>
+                                        <span class="line-label">1830 $</span>
+                                        <span class="line-label">1305 $</span>
+                                        <span class="line-label">655 $</span>
+                                    </div>
+                                    <div class="table-line">
+                                        <span class="line-label" id="linelabel4"></span>
+                                        <span class="line-label">1200 $</span>
+                                        <span class="line-label">5200 $</span>
+                                        <span class="line-label">3500 $</span>
+                                        <span class="line-label">6155 $</span>
+                                    </div>
+
+                            </div>
+                    </div>
+                    
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

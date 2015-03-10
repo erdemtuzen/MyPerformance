@@ -1,0 +1,308 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>MyPerformance</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0.RC/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0.RC/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0.RC/js/ui.js"></script>
+    <!-- MyPerformance references -->
+    <link href="/css/default.css" rel="stylesheet">
+    <script src="/js/default.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/language-load.js"></script>
+    <script src="/js/5-ProgrammaticInvocation.js"></script>
+    <script src="/sample-utils/sample-utils.js"></script>
+     <script src="/js/kxp.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            // Customer Acq
+            $(".customer-acq-link").hover(normalState, hoverState);
+            function normalState() {
+                $("#customer-acq-title").css("color", "white");
+                $("#customer-acq-value").css("color", "white");
+            };
+            function hoverState() {
+                $("#customer-acq-title").css("color", "#555555");
+                $("#customer-acq-value").css("color", "#555555");
+            };
+
+            ///
+            //Retail Loans
+            $(".retail-loans-link").hover(normalState1, hoverState1);
+            function normalState1() {
+                $("#retail-loans-title").css("color", "white");
+                $("#retail-loans-value").css("color", "white");
+            };
+            function hoverState1() {
+                $("#retail-loans-title").css("color", "#555555");
+                $("#retail-loans-value").css("color", "#555555");
+            };
+            //
+            //Deposit
+            $(".deposit-link").hover(normalState2, hoverState2);
+            function normalState2() {
+                $("#deposit-title").css("color", "white");
+                $("#deposit-value").css("color", "white");
+            };
+            function hoverState2() {
+                $("#deposit-title").css("color", "#555555");
+                $("#deposit-value").css("color", "#555555");
+            };
+            //
+
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            var chart;
+            $(document).ready(function () {
+
+                // define the options
+                var options = {
+
+                    chart: {
+                        renderTo: 'container'
+                    },
+
+                    title: {
+                        text: ' '
+                    },
+
+                    subtitle: {
+                        text: ' '
+                    },
+
+                    xAxis: {
+                        type: 'datetime',
+                        tickInterval: 7 * 24 * 3600 * 1000, // one week
+                        tickWidth: 0,
+                        gridLineWidth: 1,
+                        labels: {
+                            align: 'left',
+                            x: 3,
+                            y: -3
+                        }
+                    },
+
+                    yAxis: [{ // left y axis
+                        title: {
+                            text: null
+                        },
+                        labels: {
+                            align: 'left',
+                            x: 3,
+                            y: 16,
+                            formatter: function () {
+                                return Highcharts.numberFormat(this.value, 0);
+                            }
+                        },
+                        showFirstLabel: false
+                    }, { // right y axis
+                        linkedTo: 0,
+                        gridLineWidth: 0,
+                        opposite: true,
+                        title: {
+                            text: null
+                        },
+                        labels: {
+                            align: 'right',
+                            x: -3,
+                            y: 16,
+                            formatter: function () {
+                                return Highcharts.numberFormat(this.value, 0);
+                            }
+                        },
+                        showFirstLabel: false
+                    }],
+
+                    legend: {
+                        align: 'left',
+                        verticalAlign: 'top',
+                        y: 20,
+                        floating: true,
+                        borderWidth: 0
+                    },
+
+                    tooltip: {
+                        shared: true,
+                        crosshairs: true
+                    },
+
+                    plotOptions: {
+                        series: {
+                            cursor: 'pointer',
+                            point: {
+                                events: {
+                                    click: function () {
+                                        hs.htmlExpand(null, {
+                                            pageOrigin: {
+                                                x: this.pageX,
+                                                y: this.pageY
+                                            },
+                                            headingText: this.series.name,
+                                            maincontentText: Highcharts.dateFormat('%A, %b %e, %Y', this.x) + ':<br/> ' +
+                                        this.y + ' visits',
+                                            width: 200
+                                        });
+                                    }
+                                }
+                            },
+                            marker: {
+                                lineWidth: 1
+                            }
+                        }
+                    },
+
+                    series: [{
+                        name: 'All Consumer',
+                        lineWidth: 4,
+                        marker: {
+                            radius: 4
+                        }
+                    }, {
+                        name: 'New Consumer'
+                    }]
+                };
+
+
+                // Load data asynchronously using jQuery. On success, add the data
+                // to the options and initiate the chart.
+                // This data is obtained by exporting a GA custom report to TSV.
+                // http://api.jquery.com/jQuery.get/
+                jQuery.get('analytics.tsv', null, function (tsv, state, xhr) {
+                    var lines = [],
+                listen = false,
+                date,
+
+                // set up the two data series
+                allVisits = [],
+                newVisitors = [];
+
+                    // inconsistency
+                    if (typeof tsv !== 'string') {
+                        tsv = xhr.responseText;
+                    }
+
+                    // split the data return into lines and parse them
+                    tsv = tsv.split(/\n/g);
+                    jQuery.each(tsv, function (i, line) {
+
+                        // listen for data lines between the Graph and Table headers
+                        if (tsv[i - 3] == '# Graph') {
+                            listen = true;
+                        } else if (line == '' || line.charAt(0) == '#') {
+                            listen = false;
+                        }
+
+                        // all data lines start with a double quote
+                        if (listen) {
+                            line = line.split(/\t/);
+                            date = Date.parse(line[0] + ' UTC');
+
+                            allVisits.push([
+                        date,
+                        parseInt(line[1].replace(',', ''), 10)
+                            ]);
+                            newVisitors.push([
+                        date,
+                        parseInt(line[2].replace(',', ''), 10)
+                            ]);
+                        }
+                    });
+
+                    options.series[0].data = allVisits;
+                    options.series[1].data = newVisitors;
+
+                    chart = new Highcharts.Chart(options);
+                });
+            });
+
+        });
+    </script>
+
+
+    <!-- ]"Additional files for the Highslide popup effect -->
+    <script type="text/javascript" src="/js/highslide-full.min.js"></script>
+    <script type="text/javascript" src="/js/highslide.config.js" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="/css/highslide.css" />
+    <script src="/js/highcharts.js"></script>
+    <script type="text/javascript">WinJS.UI.processAll();</script>
+</head>
+
+<body>
+    <div data-win-control="WinJS.UI.ViewBox">
+        <div class="fixedlayout">
+            <div class="all-content">
+                <h1 class="page-title" id="pagetitle"></h1>
+                <h1 class="hello-message" id="hello"></h1>
+                <br class="clr" />
+                 <input type="button" class="Lang" id="turkish" value="Türkçe" onclick="selectLang('tr');">
+                    <input type="button" id="english" value="English" onclick="selectLang('en');">
+                <h1 class="page-second-title" id="Overview"></h1>
+                <div class="main-content">
+                   
+                    <div class="main-left">
+                        <div class="customer-acq-link">
+                            <a href="/html/customer-acqusition.html">
+                                <span id="customer-acq-title" class="cat-title"></span>
+                                <span id="customer-acq-value" class="cat-value">$1,031</span>
+                                <img class="cat-img-cust" src="images/customer-value.png" />
+                            </a>
+
+                        </div>
+                        <div class="retail-loans-link">
+                            <a href="/html/retail-loans.html">
+                                <span id="retail-loans-title" class="cat-title"></span><span id="retail-loans-value"
+                                    class="cat-value">$3,031</span>
+                                <img class="cat-img-ret" src="images/retail-value.png" />
+                            </a>
+                        </div>
+                        <div class="deposit-link">
+                            <a href="/html/deposit.html">
+                                <span id="deposit-title" class="cat-title"></span><span id="deposit-value"
+                                    class="cat-value">$2,056</span>
+                                <img class="cat-img-dep" src="images/deposit-value.png" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main-right">
+                        <span class="cq-green" id="Quota">%70</span>
+                        <br class="clr" />
+                        <div class="right-content">
+                            <h1 class="page-second-title" id="AveragePerformance"></h1>
+                            <script type="text/javascript">
+                                $(document).ready(function () {
+                                    $("#selectLang").change(function () {
+                                        $(this).css("background-color", "#D6D6FF");
+                                    });
+                                });
+                            </script>
+                            <div id="contentHost"></div>
+                            <div id="container" style="max-width: 460px; height: 260px; margin-left: -10px; margin-top: 10px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-win-control="WinJS.UI.AppBar">
+            <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{icon:'settings', id:'scenario5Show', label:'Settings', onclick:null, section:'global'}"></button>
+        </div>
+    </div>
+    <!--<div id="defaultsDiv" data-win-control="WinJS.UI.SettingsFlyout" aria-label="App defaults settings flyout"
+                data-win-options="{width:'wide'}">
+            <div class="win-header" style="background-color:#dbf9ff;">
+                <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton"></button>
+                <div class="win-label">Defaults</div>
+                <img src="images/smallTile.png" style="position: absolute; right: 40px;"/>
+            </div>
+            <div class="win-content">
+                {Defaults content here}
+            </div>
+        </div>
+	 -->
+</body>
+</html>

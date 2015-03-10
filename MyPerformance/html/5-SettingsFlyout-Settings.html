@@ -1,0 +1,39 @@
+﻿<!doctype HTML>
+<html>
+<head>
+    <title>App settings flyout</title>
+     <script src="/js/kxp.js"></script> 
+</head>
+<body>
+    <!-- BEGINSETTINGSFLYOUT -->
+    <div id="settingsDiv" data-win-control="WinJS.UI.SettingsFlyout" aria-label="App Settings Flyout"
+        data-win-options="{width:'narrow'}">
+        <div class="win-header">
+            <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton">
+            </button>
+            <div class="win-label">Settings</div>
+        </div>
+        <style type="text/css">
+            #selectLang option {
+                width: 140px;
+            }
+        </style>
+        <div class="win-content">
+            <h3></h3>
+            <div>
+                Language:
+                <!-- <select id="selectLang">
+                        <option>Türkçe </option>
+                        <option>English </option>
+                    </select>-->
+
+
+                <input type="button" class="Turkce" value="Türkçe" onclick="selectLang('tr');">
+                <input type="button" value="English" onclick="selectLang('en');">
+            </div>
+            <!--<input id="saveSettings" type="button" value="Save" style="float: right; margin-top: 10px;" />-->
+        </div>
+    </div>
+    <!-- ENDSETTINGSFLYOUT -->
+</body>
+</html>

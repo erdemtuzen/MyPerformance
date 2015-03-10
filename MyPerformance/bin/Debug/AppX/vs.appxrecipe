@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DEVELOPMENT</Machine>
+    <WindowsUser>Erdem</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>CE15042E81DA3C78A1CE5C0E66084CE6733566893ADC755329F3EAE522E3838E</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>948c8f7f-57d3-4d83-b166-db66abc90a19_1.0.0.0_neutral__9ppcz594fp5bw</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>948c8f7f-57d3-4d83-b166-db66abc90a19_9ppcz594fp5bw!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>948c8f7f-57d3-4d83-b166-db66abc90a19</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Erdem</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-06-04T18:56:02.474</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\css\highslide.css">
+      <PackagePath>css\highslide.css</PackagePath>
+      <Modified>2012-05-12T02:57:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2012-05-12T11:08:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\sample-utils\sample-utils.css">
+      <PackagePath>sample-utils\sample-utils.css</PackagePath>
+      <Modified>2012-05-12T12:35:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\data\customer.xml">
+      <PackagePath>data\customer.xml</PackagePath>
+      <Modified>2012-05-18T12:14:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\data\deposit.xml">
+      <PackagePath>data\deposit.xml</PackagePath>
+      <Modified>2012-05-18T01:27:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\data\retail.xml">
+      <PackagePath>data\retail.xml</PackagePath>
+      <Modified>2012-05-18T01:27:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\languages\en.xml">
+      <PackagePath>languages\en.xml</PackagePath>
+      <Modified>2012-05-18T23:30:25.863</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\languages\tr.xml">
+      <PackagePath>languages\tr.xml</PackagePath>
+      <Modified>2012-05-18T23:32:16.460</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\default.html">
+      <PackagePath>default.html</PackagePath>
+      <Modified>2012-06-04T18:52:46.461</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\html\5-ProgrammaticInvocation.html">
+      <PackagePath>html\5-ProgrammaticInvocation.html</PackagePath>
+      <Modified>2012-05-13T04:45:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\html\5-SettingsFlyout-Settings.html">
+      <PackagePath>html\5-SettingsFlyout-Settings.html</PackagePath>
+      <Modified>2012-05-19T00:22:56.988</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\html\customer-acqusition.html">
+      <PackagePath>html\customer-acqusition.html</PackagePath>
+      <Modified>2012-06-04T18:46:27.325</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\html\deposit.html">
+      <PackagePath>html\deposit.html</PackagePath>
+      <Modified>2012-06-04T18:37:11.288</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\html\retail-loans.html">
+      <PackagePath>html\retail-loans.html</PackagePath>
+      <Modified>2012-06-04T18:37:02.147</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\150x150.png">
+      <PackagePath>images\150x150.png</PackagePath>
+      <Modified>2012-05-14T14:18:27.660</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\24x24.png">
+      <PackagePath>images\24x24.png</PackagePath>
+      <Modified>2012-05-14T12:49:50.541</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\30x30.png">
+      <PackagePath>images\30x30.png</PackagePath>
+      <Modified>2012-05-16T23:31:17.843</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\310x150.png">
+      <PackagePath>images\310x150.png</PackagePath>
+      <Modified>2012-05-14T14:20:09.613</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\bg.png">
+      <PackagePath>images\bg.png</PackagePath>
+      <Modified>2012-05-10T02:04:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\content-bg.png">
+      <PackagePath>images\content-bg.png</PackagePath>
+      <Modified>2012-05-11T05:57:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\content-sub-bg.png">
+      <PackagePath>images\content-sub-bg.png</PackagePath>
+      <Modified>2012-05-12T02:02:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\cq-green.png">
+      <PackagePath>images\cq-green.png</PackagePath>
+      <Modified>2012-05-11T06:06:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\cq-red.png">
+      <PackagePath>images\cq-red.png</PackagePath>
+      <Modified>2012-05-10T02:31:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\cq-yellow.png">
+      <PackagePath>images\cq-yellow.png</PackagePath>
+      <Modified>2012-05-10T02:31:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\customer-acq-hover.png">
+      <PackagePath>images\customer-acq-hover.png</PackagePath>
+      <Modified>2012-05-10T04:35:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\customer-acq-title-hover.png">
+      <PackagePath>images\customer-acq-title-hover.png</PackagePath>
+      <Modified>2012-05-11T14:24:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\customer-acq-title.png">
+      <PackagePath>images\customer-acq-title.png</PackagePath>
+      <Modified>2012-05-11T14:22:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\customer-acq.png">
+      <PackagePath>images\customer-acq.png</PackagePath>
+      <Modified>2012-05-10T02:22:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\customer-value.png">
+      <PackagePath>images\customer-value.png</PackagePath>
+      <Modified>2012-05-10T07:35:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\deposit-hover.png">
+      <PackagePath>images\deposit-hover.png</PackagePath>
+      <Modified>2012-05-10T07:14:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\deposit-title-hover.png">
+      <PackagePath>images\deposit-title-hover.png</PackagePath>
+      <Modified>2012-05-12T06:38:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\deposit-title.png">
+      <PackagePath>images\deposit-title.png</PackagePath>
+      <Modified>2012-05-12T06:39:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\deposit-value.png">
+      <PackagePath>images\deposit-value.png</PackagePath>
+      <Modified>2012-05-10T07:36:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\deposit.png">
+      <PackagePath>images\deposit.png</PackagePath>
+      <Modified>2012-05-10T07:15:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\logo.png">
+      <PackagePath>images\logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-02-14T03:25:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\myperformance.png">
+      <PackagePath>images\myperformance.png</PackagePath>
+      <Modified>2012-05-03T07:30:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\retail-loans-hover.png">
+      <PackagePath>images\retail-loans-hover.png</PackagePath>
+      <Modified>2012-05-10T02:24:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\retail-loans-title-hover.png">
+      <PackagePath>images\retail-loans-title-hover.png</PackagePath>
+      <Modified>2012-05-12T06:32:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\retail-loans-title.png">
+      <PackagePath>images\retail-loans-title.png</PackagePath>
+      <Modified>2012-05-12T06:32:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\retail-loans.png">
+      <PackagePath>images\retail-loans.png</PackagePath>
+      <Modified>2012-05-10T07:11:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\retail-value.png">
+      <PackagePath>images\retail-value.png</PackagePath>
+      <Modified>2012-05-10T07:36:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\smalllogo.png">
+      <PackagePath>images\smalllogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-02-14T03:25:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\splash-screen.png">
+      <PackagePath>images\splash-screen.png</PackagePath>
+      <Modified>2012-05-14T12:48:39.105</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\splashscreen.png">
+      <PackagePath>images\splashscreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-02-14T03:25:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\storelogo.png">
+      <PackagePath>images\storelogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-02-14T03:25:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\sub-title-icon.png">
+      <PackagePath>images\sub-title-icon.png</PackagePath>
+      <Modified>2012-05-12T03:30:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\images\Thumbs.db">
+      <PackagePath>images\Thumbs.db</PackagePath>
+      <Modified>2012-05-18T23:34:40.960</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\js\5-ProgrammaticInvocation.js">
+      <PackagePath>js\5-ProgrammaticInvocation.js</PackagePath>
+      <Modified>2012-05-13T04:44:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+      <Modified>2012-06-04T07:11:07.295</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\js\highcharts.js">
+      <PackagePath>js\highcharts.js</PackagePath>
+      <Modified>2012-05-12T03:08:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\js\highslide-full.min.js">
+      <PackagePath>js\highslide-full.min.js</PackagePath>
+      <Modified>2012-05-12T03:07:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\js\highslide.config.js">
+      <PackagePath>js\highslide.config.js</PackagePath>
+      <Modified>2012-05-12T03:18:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\js\jquery.js">
+      <PackagePath>js\jquery.js</PackagePath>
+      <Modified>2012-05-10T05:57:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\js\kxp.js">
+      <PackagePath>js\kxp.js</PackagePath>
+      <Modified>2012-06-04T19:10:18.202</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\js\language-load.js">
+      <PackagePath>js\language-load.js</PackagePath>
+      <Modified>2012-05-13T05:28:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\js\xmltojson.js">
+      <PackagePath>js\xmltojson.js</PackagePath>
+      <Modified>2012-05-18T06:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\sample-utils\sample-utils.js">
+      <PackagePath>sample-utils\sample-utils.js</PackagePath>
+      <Modified>2012-05-12T14:08:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\erdem\documents\visual studio 2012\Projects\MyPerformance\MyPerformance\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2012-06-04T07:10:04.665</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files (x86)\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0.RC\1.0\">
+      <Name>Microsoft.WinJS.1.0.RC</Name>
+      <Version>1.0.8377.0</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.1.0.RC, MinVersion=1.0.8377.0</FrameworkIdentity>
+      <AppxLocation>C:\Program Files (x86)\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0.RC\1.0\Microsoft.WinJS.1.0.RC.appx</AppxLocation>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

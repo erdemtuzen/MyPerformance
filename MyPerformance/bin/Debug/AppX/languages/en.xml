@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<language>
+  <pagetitle>My Performance</pagetitle>
+  <pagetitlecustomer>Customer Acqusition</pagetitlecustomer>
+  <pagetitledeposit>Deposit</pagetitledeposit>
+  <pagetitleretail>Retail Loans</pagetitleretail>
+  <hello>Hello!</hello>
+  <customer-acq-title>
+    Customer Acqusition
+  </customer-acq-title>
+  <retail-loans-title>
+    Retail Loans
+  </retail-loans-title>
+  <deposit-title>
+    Deposit
+  </deposit-title>
+  <Quota>
+    Quota
+  </Quota>
+  <AveragePerformance>
+    Average Performance
+  </AveragePerformance>
+  <linelabel1>
+    Purchase A
+  </linelabel1>
+  <linelabel2>
+    Purchase B
+  </linelabel2>
+  <linelabel3>
+    Purchase C
+  </linelabel3>
+  <linelabel4>
+    Purchase D
+  </linelabel4>
+  <consumeracqusition>
+    Consumer Acqusition
+  </consumeracqusition>
+  <last4month>
+    Last 4 Month
+  </last4month>
+  <May>
+    May
+  </May>
+  <Mar>
+    Mar
+  </Mar>
+  <Apr>
+    Apr
+  </Apr>
+  <Feb>
+    Fab
+  </Feb>
+  <Overview>
+    OverView
+  </Overview>
+</language>

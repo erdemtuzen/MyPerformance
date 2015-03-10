@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+  <Item>
+    <Title>Intro</Title>
+    <File>data/datafolder/Customer/Intro.pptx</File>
+    <Type>Presentation</Type>
+    <FileType>pptx</FileType>
+    <Company>Microsoft</Company>
+  </Item>
+  <Item>
+    <Title>Metro Style User Experience</Title>
+    <File>data/datafolder/Customer/MetroStyleUserExperience.pptx</File>
+    <Type>Document</Type>
+    <FileType>pptx</FileType>
+    <Company>Microsoft</Company>
+  </Item>
+  <Item>
+    <Title>Metro Style User Experience</Title>
+    <File>data/datafolder/Customer/MetroStyleUserExperience.pptx</File>
+    <Type>Other</Type>
+    <FileType>pptx</FileType>
+    <Company>Microsoft</Company>
+  </Item>
+</Items>
